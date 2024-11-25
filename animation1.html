@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+        }
+
+        .star-field {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.w3schools.com/css/img_stars.jpg') repeat;
+            animation: moveStars 100s linear infinite;
+        }
+
+        @keyframes moveStars {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 10000px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="star-field"></div>
+
+</body>
+</html>
